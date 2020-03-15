@@ -1,5 +1,5 @@
 {
-  "name": "twala-auth",
+  "name": "twala-authenticator",
   "version": "0.0.1",
   "description": "Package for authenticating Twala identities.",
   "main": "index.js",
@@ -10,5 +10,8 @@
     "twala"
   ],
   "author": "@twala-io",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.2.6"
+  }
 }
