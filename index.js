@@ -19,8 +19,8 @@ class TwalaAuthenticator {
   }
 
   async isSigned (address, messageHash, v, r, s) {
-    const signatureVerifierContractAbi = this.contract.getSignatureVerifierAbi()
-    const signatureVerifierContractAddress = this.config.get('web3.smartContracts.signatureVerifierAddress')
+    const signatureVerifierContractAbi = this.signatureVerifierContractAbi
+    const signatureVerifierContractAddress = this.signatureVerifierContractAddress
     const signatureVerifierContract = new this.web3.eth.Contract(signatureVerifierContractAbi, signatureVerifierContractAddress)
     let isSigned = null
     try {
