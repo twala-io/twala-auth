@@ -1,7 +1,7 @@
 {
   "name": "twala-auth",
   "version": "1.0.0",
-  "description": "Package for authenticating Twala identities from device addresses and signatures.",
+  "description": "Package for authenticating Twala identities.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
