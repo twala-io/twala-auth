@@ -3,10 +3,10 @@
 const Web3 = require('web3')
 
 class TwalaAuthenticator {
-  constructor (provider, signatureVerifierContractAddress) {
+  constructor (provider) {
     this.web3 = new Web3(provider)
-    this.signatureVerifierContractAddress = signatureVerifierContractAddress
     this.signatureVerifierContractAbi = [{'inputs':[{'internalType':'address','name':'_address','type':'address'},{'internalType':'bytes32','name':'_messageHash','type':'bytes32'},{'internalType':'uint8','name':'_v','type':'uint8'},{'internalType':'bytes32','name':'_r','type':'bytes32'},{'internalType':'bytes32','name':'_s','type':'bytes32'}],'name':'isSigned','outputs':[{'internalType':'bool','name':'','type':'bool'}],'stateMutability':'pure','type':'function'},{'inputs':[{'internalType':'bytes32','name':'_messageHash','type':'bytes32'},{'internalType':'uint8','name':'_v','type':'uint8'},{'internalType':'bytes32','name':'_r','type':'bytes32'},{'internalType':'bytes32','name':'_s','type':'bytes32'}],'name':'recoverAddress','outputs':[{'internalType':'address','name':'','type':'address'}],'stateMutability':'pure','type':'function'}]
+    this.signatureVerifierContractAddress = '0x4Bf205fAb0BDaD0d2803b5f082E74bE53949FB41'
   }
 
   async recoverAddress (messageHash, v, r, s) {

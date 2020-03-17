@@ -10,5 +10,5 @@ Package for authenticating Twala identities.
 # Installation
 
 ```sh-session
-$ npm install -g twala-authenticator
+$ npm install twala-authenticator
 ```

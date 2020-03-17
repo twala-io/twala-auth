@@ -1,6 +1,6 @@
 {
   "name": "twala-authenticator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Package for authenticating Twala identities.",
   "main": "index.js",
   "scripts": {
