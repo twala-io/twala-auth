@@ -12,8 +12,8 @@ Package for authenticating Twala identities.
 * Authenticate identity
 ```js
 const TwalaAuth = require('@twala-io/twala-auth')
-const auth = new TwalaAuth(web3Provider)
-const identity = await auth.authenticate(message, messageHash, v, r, s)
+const auth = new TwalaAuth(consortiumWeb3Provider)
+const authenticatedIdentity = await auth.authenticate(message, messageHash, v, r, s)
 ```
 
 ## Installation
