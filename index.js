@@ -9,6 +9,13 @@ class TwalaAuthenticator {
   }
 
   async authenticate (message, messageHash, v, r, s ) {
+    const hashedMessage = this.web3.eth.accounts.hashMessage(message)
+    if (hashedMessage !== messageHash) {
+      return {
+        identity: null,
+        is_authenticated: false
+      }
+    }
     const parsedMessage = JSON.parse(this.web3.utils.hexToAscii(message))
     const deviceClaimTopic = 1
     const claimHolderContractAbi = this.claimHolderContractAbi
