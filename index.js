@@ -31,11 +31,7 @@ class TwalaAuthenticator {
       return {
         identity: {
           identity_contract_address: identityContractAddress,
-          account: {
-            first_name: parsedMessage.first_name,
-            middle_name: parsedMessage.middle_name,
-            last_name: parsedMessage.last_name,
-            suffix: parsedMessage.suffix,
+          account_claim: {
             email: parsedMessage.email,
             mobile: parsedMessage.mobile
           }
