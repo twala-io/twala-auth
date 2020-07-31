@@ -34,6 +34,16 @@ class TwalaAuthenticator {
           account_claim: {
             email: parsedMessage.email,
             mobile: parsedMessage.mobile
+          },
+          identification_claim: {
+            id_type: parsedMessage.id_type,
+            id_expiration: parsedMessage.id_expiration,
+            first_name: parsedMessage.first_name,
+            middle_name: parsedMessage.middle_name,
+            last_name: parsedMessage.last_name,
+            suffix: parsedMessage.suffix,
+            sex: parsedMessage.sex,
+            date_of_birth: parsedMessage.date_of_birth
           }
         },
         is_authenticated: true
