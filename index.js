@@ -37,6 +37,7 @@ class TwalaAuthenticator {
           },
           identification_claim: {
             id_type: parsedMessage.id_type,
+            id_number: parsedMessage.id_number,
             id_expiration: parsedMessage.id_expiration,
             first_name: parsedMessage.first_name,
             middle_name: parsedMessage.middle_name,
