@@ -47,6 +47,10 @@ class TwalaAuthenticator {
             date_of_birth: parsedMessage.date_of_birth
           }
         },
+        location: {
+          latitude: parsedMessage.latitude,
+          longitude: parsedMessage.longitude
+        },
         is_authenticated: true
       }
     } else {
